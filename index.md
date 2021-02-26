@@ -1,4 +1,1 @@
-```python
-def example(s):
-   return
-```
+{{ content }}
