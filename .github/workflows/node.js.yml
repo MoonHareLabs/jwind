@@ -17,6 +17,8 @@ jobs:
       uses: actions/setup-node@v1
     - run: npm i purgecss
     - run: npx purgecss --css src/tailwind.css --content "*.md" "*.html" "*.js" --output assets/css/
+
+    - name: dist
     - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Dist
