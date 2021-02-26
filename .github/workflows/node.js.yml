@@ -16,4 +16,4 @@ jobs:
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
     - run: npm i purgecss
-    - run: purgecss --css src/tailwind.css --content "*.md" "*.html" "*.js" --output assets/css/
+    - run: npx purgecss --css src/tailwind.css --content "*.md" "*.html" "*.js" --output assets/css/
